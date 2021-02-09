@@ -151,17 +151,19 @@ def user_stats(df):
     print('-'*40)
 
 
-def raw_data(df, start, end, hop):
+def raw_data(df):
     answer = input('Would you like to see 5 rows of raw data ? (yes, no): ')
     answers = ['yes', 'no']
     while answer not in answer:
         answer = input('please enter a valid input (yes, no): ')
 
+    start = 0
+    end = 0
     while answer.lower().strip() == 'yes':
 
         print(df.iloc[start: end])
-        start = start + hop
-        end = end + hop
+        start = start + 5
+        end = end + 5
         answer = input('Would you like to see 5 more rows ? (yes, no): ').lower().strip()
         while answer not in answer:
             answer = inpiut('please enter a valid input (yes, no): ')
