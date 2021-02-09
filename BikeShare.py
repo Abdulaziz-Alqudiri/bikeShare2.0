@@ -78,7 +78,8 @@ def load_data(city, month, day):
 
 
 def time_stats(df):
-    """Displays statistics on the most frequent times of travel."""
+    """Displays statistics on the most frequent times of travel.
+    -Doesn't return anything."""
 
     print('\nCalculating The Most Frequent Times of Travel...\n')
     start_time = time.time()
@@ -94,7 +95,8 @@ def time_stats(df):
 
 
 def station_stats(df):
-    """Displays statistics on the most popular stations and trip."""
+    """Displays statistics on the most popular stations and trip.
+    -Doesn't return anything."""
 
     print('\nCalculating The Most Popular Stations and Trip...\n')
     start_time = time.time()
@@ -112,7 +114,8 @@ def station_stats(df):
 
 
 def trip_duration_stats(df):
-    """Displays statistics on the total and average trip duration."""
+    """Displays statistics on the total and average trip duration.
+    -Doesn't return anything."""
 
     print('\nCalculating Trip Duration...\n')
     start_time = time.time()
@@ -127,7 +130,8 @@ def trip_duration_stats(df):
 
 
 def user_stats(df):
-    """Displays statistics on bikeshare users."""
+    """Displays statistics on bikeshare users.
+    -Doesn't return anything."""
 
     print('\nCalculating User Stats...\n')
     start_time = time.time()
@@ -135,6 +139,7 @@ def user_stats(df):
     print('The counts of user types: {}'.format(df['User Type'].value_counts()))
 
     try:
+        # this is here to make sure no error shows if this data isn't found
         counts_gender = df['Gender'].value_counts()
         early = df['Birth Year'].min()
         recent = df['Birth Year'].max()
@@ -145,6 +150,7 @@ def user_stats(df):
         print('The most common birth year is: {}'.format(common))
 
     except:
+        # error message instead of the exception
         print('These values aren\' available for the city you chose')
 
     print("\nThis took %s seconds." % (time.time() - start_time))
