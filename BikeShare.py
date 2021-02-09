@@ -9,7 +9,7 @@ CITY_DATA = {'chicago': 'chicago.csv',
 
 def get_filters():
     """
-    Asks user to specify a city, month, and day to analyze.
+    this method is used to get filters to use on the data.
 
     Returns:
         (str) city - name of the city to analyze
@@ -50,7 +50,7 @@ def get_filters():
 
 def load_data(city, month, day):
     """
-    Loads data for the specified city and filters by month and day if applicable.
+    Loads data and filters the data by the given filters.
 
     Args:
         (str) city - name of the city to analyze
