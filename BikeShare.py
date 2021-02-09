@@ -167,6 +167,13 @@ def raw_data(df, start, end, hop):
             answer = inpiut('please enter a valid input (yes, no): ')
 
 
+def calculations(df):
+    time_stats(df)
+    station_stats(df)
+    trip_duration_stats(df)
+    user_stats(df)
+
+
 def main():
 
     while True:
@@ -175,10 +182,7 @@ def main():
 
         raw_data(df, 0, 5, 5)
 
-        time_stats(df)
-        station_stats(df)
-        trip_duration_stats(df)
-        user_stats(df)
+        calculations(df)
 
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
