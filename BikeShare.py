@@ -175,8 +175,6 @@ def main():
 
         raw_data(df, 0, 5, 5)
 
-        print('\n\n LET THE CALCULATION START !!!!!!\n\n')
-
         time_stats(df)
         station_stats(df)
         trip_duration_stats(df)
