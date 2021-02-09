@@ -1,27 +1,42 @@
--This project is a python project to analyze csv files using the python libraries 'numpy' and 'pandas'.
+**Date created:**
 
--This project is made to analyze data from a bike rental company in the USA.
+  _February 9th, 2021_
 
--you need to download the libraries before running the program.
+  **project title:**
 
--This project was made as a part of udacity data science program.
+  _bikeShare_
 
-
--Steps to run the program on your local machine:
-
-  *Download the python file (ending in .py).
-
-  *Download python3 on your local machine.
-
-  *there are csv files but they aren't in the repo, you can just use your own csv files.
-
-  *you have to include the csv files in the same directory as the python file.
-
-  *you go to the same directory as the python file in your terminal.
-
-  *you run the command (python3 bikeShare2.py).
   
-  *the program should run on your local terminal.
+  **description:**
+
+  _A python project to analyze data from a csv file_
+
+  **files used:**
+
+  _BikeShare.py & .gitignore_
+
+  **Credits:**
+
+  _This project was made by abdulaziz Alqudiri to submit to udacity for the data science program_
+
+
+
+
+## **-Steps to run the program on your local machine:**
+
+  1.Download the python file (ending in .py).
+
+  2.Download python3 on your local machine.
+
+  3.there are csv files but they aren't in the repo, you can just use your own csv files.
+
+  4.you have to include the csv files in the same directory as the python file.
+
+  5.you go to the same directory as the python file in your terminal.
+
+  6.you run the command (python3 bikeShare2.py).
+
+  7.the program should run on your local terminal.
 
 
 # bikeShare2.0
